@@ -68,13 +68,13 @@ function App() {
         
         <Routes>
           
-          <Route path="/" element={<Index count={count} handleCountPlus={handleCountPlus} handleCountMinus={handleCountMinus} addToCart={addToCart}/>} />
+          <Route path="/ecommerce" element={<Index count={count} handleCountPlus={handleCountPlus} handleCountMinus={handleCountMinus} addToCart={addToCart}/>} />
 
           <Route path="/Login" element={<Login />} />
 
           <Route path="/Trending" element={<Trending count={count} handleCountPlus={handleCountPlus} handleCountMinus={handleCountMinus} addToCart={addToCart} />} />
 
-          <Route element={isChecked ? <Navigate to="/Trending" /> : <Navigate to="/" />} />
+          <Route element={isChecked ? <Navigate to="/Trending" /> : <Navigate to="/ecommerce" />} />
 
         </Routes>
       </BrowserRouter>
